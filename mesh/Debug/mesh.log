@@ -1,0 +1,13 @@
+﻿Build started 3/23/2015 4:34:33 PM.
+     1>Project "C:\Dan\Caspar\mesh\mesh.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\mesh.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Matteo\Caspar\main\src /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /wd4800 /wd4805 /analyze- /errorReport:prompt src\CMesh.cpp
+         CMesh.cpp
+     1>c:\dan\caspar\main\src\cgapinput.h(22): fatal error C1083: Cannot open include file: 'blitz\array.h': No such file or directory
+     1>Done Building Project "C:\Dan\Caspar\mesh\mesh.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.32
