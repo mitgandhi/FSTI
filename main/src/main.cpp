@@ -445,9 +445,15 @@ int piston_GUI(Concurrency::event & local_event, Concurrency::event & global_eve
 			<< "F_Fluid_1\tF_Fluid_2\tF_Fluid_3\tF_Fluid_4\tF_Contact_1\tF_Contact_2\tF_Contact_3\tF_Contact_4\tdF_1\tdF_2\t" 
 			<< "dF_3\tdF_4\tTotal_Leakage\tTotal_Torque_Loss\tMFT\tTotal_Mechanical_Power_Loss\tTotal_Volumetric_Power_Loss\t" 
 			<< "Mechanical_Power_Loss\tVolumetric_Power_Loss\tFSKx\tFSKy\tFAKz\tFKx\tFKy\tFK\tFaK\tFDK\tFwK\tFAKy\tFwky\tFwkz\tFAK_inclined\tMKx\tMKy\tMK" << "\n";
-		fout.close();
-		fout.clear();
-	}
+                fout.close();
+                fout.clear();
+
+                //header for contact pressure summary
+                fout.open("./output/piston/contact_pressure_summary.txt",ios::app);
+                fout << "%phi_deg\tmean_contact_pressure[Pa]\tmax_contact_pressure[Pa]" << "\n";
+                fout.close();
+                fout.clear();
+        }
 	
 	else{
 	//create header for piston.txt file
@@ -460,11 +466,17 @@ int piston_GUI(Concurrency::event & local_event, Concurrency::event & global_eve
 		<< "F_Fluid_1\tF_Fluid_2\tF_Fluid_3\tF_Fluid_4\tF_Contact_1\tF_Contact_2\tF_Contact_3\tF_Contact_4\tdF_1\tdF_2\t" 
 		<< "dF_3\tdF_4\tTotal_Leakage\tTotal_Torque_Loss\tMFT\tTotal_Mechanical_Power_Loss\tTotal_Volumetric_Power_Loss\t" 
 		<< "Mechanical_Power_Loss\tVolumetric_Power_Loss\tFSKx\tFSKy\tFAKz\tFKx\tFKy\tFK\tFaK\tFDK\tFwK" << "\n";
-	fout.close();
-	fout.clear();
-	}
-	//create log file
-	Log.open("./piston_log.txt");
+        fout.close();
+        fout.clear();
+
+        //header for contact pressure summary
+        fout.open("./output/piston/contact_pressure_summary.txt",ios::app);
+        fout << "%phi_deg\tmean_contact_pressure[Pa]\tmax_contact_pressure[Pa]" << "\n";
+        fout.close();
+        fout.clear();
+        }
+        //create log file
+        Log.open("./piston_log.txt");
 	StartGapModule();
 	return 0;
 }

@@ -726,9 +726,18 @@ int CGapODE::ODESolutionOutput(void)
 				{
 					fout << scientific << myNewtonIteration.myPistonGap.qbi_piston[0](i) << "\n";
 				}
-				fout << "%" << "\n";
-				fout.close();
-				fout.clear();
+
+                fout << "%" << "\n";
+                fout.close();
+                fout.clear();
+
+                //Summary contact pressure statistics
+                double sigma_mean = sum(myNewtonIteration.myPistonGap.sigma) / (double)(N*M);
+                double sigma_max  = max(myNewtonIteration.myPistonGap.sigma);
+                fout.open("./output/piston/contact_pressure_summary.txt",ios::app);
+                fout << scientific << myGapResult.phi << "\t" << sigma_mean << "\t" << sigma_max << "\n";
+                fout.close();
+                fout.clear();
 
 				//Cylinder total heat flux, .QB file  [W/m2]
 				fout.open("./output/piston/matlab/Piston_Cylinder_Body_Heat_Flux.txt",ios::app);
