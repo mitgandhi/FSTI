@@ -1,0 +1,48 @@
+﻿Build started 28-05-2025 18:23:24.
+     1>Project "E:\Job_1\SHS--version_3.1.3\FSTI\Piston\Caspar\caspar_input\caspar_input.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Release\caspar_input.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       PreBuildEvent:
+         call "E:\Job_1\SHS--version_3.1.3\FSTI\Piston\Caspar\caspar_input\create_version.bat"
+         :VCEnd
+         Created version_define.h with PROJECT_VERSION=3.1.4
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /wd4722 /errorReport:prompt blockoptions.cpp geometry.cpp input.cpp inputfile.cpp logger.cpp lubricationmodule.cpp materials.cpp oil.cpp operatingconditions.cpp pistonoptions.cpp pmodule.cpp slipperoptions.cpp thermalfile.cpp
+         blockoptions.cpp
+         geometry.cpp
+         input.cpp
+         inputfile.cpp
+         logger.cpp
+     1>logger.cpp(26): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         lubricationmodule.cpp
+         materials.cpp
+         oil.cpp
+         operatingconditions.cpp
+         pistonoptions.cpp
+         pmodule.cpp
+         slipperoptions.cpp
+         thermalfile.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"E:\Job_1\SHS--version_3.1.3\FSTI\Piston\Caspar\main\x64\Release\caspar_input.lib" /NOLOGO /LTCG x64\Release\blockoptions.obj
+         x64\Release\geometry.obj
+         x64\Release\input.obj
+         x64\Release\inputfile.obj
+         x64\Release\logger.obj
+         x64\Release\lubricationmodule.obj
+         x64\Release\materials.obj
+         x64\Release\oil.obj
+         x64\Release\operatingconditions.obj
+         x64\Release\pistonoptions.obj
+         x64\Release\pmodule.obj
+         x64\Release\section.obj
+         x64\Release\slipperoptions.obj
+         x64\Release\thermalfile.obj
+         caspar_input.vcxproj -> E:\Job_1\SHS--version_3.1.3\FSTI\Piston\Caspar\main\x64\Release\caspar_input.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\caspar_input.unsuccessfulbuild".
+         Touching "x64\Release\caspar_input.lastbuildstate".
+     1>Done Building Project "E:\Job_1\SHS--version_3.1.3\FSTI\Piston\Caspar\caspar_input\caspar_input.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.00
