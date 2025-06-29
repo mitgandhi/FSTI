@@ -1,0 +1,24 @@
+﻿Build started 28-05-2025 18:23:30.
+     1>Project "E:\Job_1\SHS--version_3.1.3\FSTI\Piston\Caspar\fem\fem.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Release\fem.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\Dan\ThirdParty /I..\..\ThirdParty /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN64 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /wd4800 /wd4805 /errorReport:prompt src\femLoads.cpp /D_SCL_SECURE_NO_DEPRECATE 
+         femLoads.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"E:\Job_1\SHS--version_3.1.3\FSTI\Piston\Caspar\main\x64\Release\fem.lib" /NOLOGO /LTCG x64\Release\femElement.obj
+         x64\Release\femLoads.obj
+         x64\Release\femSolver.obj
+         x64\Release\femStiffness.obj
+         x64\Release\readFunctions.obj
+         x64\Release\writeDisplacement.obj
+         "E:\Job_1\SHS--version_3.1.3\FSTI\Piston\Caspar\main\x64\Release\caspar_input.lib"
+         fem.vcxproj -> E:\Job_1\SHS--version_3.1.3\FSTI\Piston\Caspar\main\x64\Release\fem.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\fem.unsuccessfulbuild".
+         Touching "x64\Release\fem.lastbuildstate".
+     1>Done Building Project "E:\Job_1\SHS--version_3.1.3\FSTI\Piston\Caspar\fem\fem.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.47
